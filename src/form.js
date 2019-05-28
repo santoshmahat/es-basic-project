@@ -4,13 +4,15 @@ const emailField = document.getElementById("email");
 const addressField = document.getElementById("address");
 const imageField = document.getElementById("image");
 
-export { 
+const formValue =  { 
   firstNameField, 
   lastNameField, 
   emailField, 
   addressField, 
   imageField
 };
+
+export default formValue;
 
 
 

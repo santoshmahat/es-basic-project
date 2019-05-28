@@ -1,8 +1,27 @@
 import saveBtn from './btn';
-import { firstNameField, lastNameField, emailField, addressField, imageField } from './form';
+import formValue from './form';
+import User from './User';
+
+const user = new User();
 
 
 
 saveBtn.addEventListener("click", function(){
-  alert("im clicked");
+  // console.log("user", formValue);
+  const { 
+    firstNameField, 
+    lastNameField, 
+    emailField, 
+    addressField, 
+     imageField
+  } = formValue;
+
+  const newUser = {
+    firstName:firstNameField.value,
+    lastName:lastNameField.value,
+    email:emailField.value,
+    address:addressField.value,
+    image:imageField.value,
+  }
+  user.addUser(newUser)
 })
