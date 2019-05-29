@@ -11,6 +11,10 @@ class User {
   }
 
 
+  getUser = () => {
+    return this.users;
+  }
+
 }
 export default User;
 
