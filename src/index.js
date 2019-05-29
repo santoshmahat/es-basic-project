@@ -1,6 +1,7 @@
 import saveBtn from './btn';
 import formValue from './form';
 import User from './User';
+import './style.css';
 
 const user = new User();
 
